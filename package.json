@@ -1,0 +1,13 @@
+{
+  "name": "web-design-course",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

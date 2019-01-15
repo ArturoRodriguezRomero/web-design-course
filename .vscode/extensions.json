@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "Zignd.html-css-class-completion",
+    "Pranaygp.vscode-css-peek",
+    "piotrpalarz.vscode-gitignore-generator"
+  ]
+}
