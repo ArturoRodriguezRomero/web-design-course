@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      @keyframes box-to-ball {
+        0% {
+          background-color: red;
+          transform: rotate(180);
+        }
+        50% {
+          background-color: blue;
+          transform: scale(2) translateX(50%);
+        }
+        100% {
+          background-color: yellow;
+          border-radius: 50%;
+          transform: translateY(50%);
+        }
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        margin: 100px;
+
+        animation: box-to-ball 3s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

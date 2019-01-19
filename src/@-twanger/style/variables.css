@@ -1,0 +1,18 @@
+:root {
+  --basic-unit: 8px;
+
+  --primary-color-100: #f52549;
+  --primary-color-200: #fa6775;
+
+  --secondary-color-100: #9bc01c;
+
+  --twang-100: #201f21;
+  --twang-200: #e8e8e8;
+  --twang-300: #f9f9f9;
+
+  --card-border-radius: 10px;
+  --button-border-radius: 50%;
+
+  --default-transition: 0.2s ease;
+  --box-shadow: 0 1px 3px #00000033;
+}

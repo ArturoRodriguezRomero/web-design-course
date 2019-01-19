@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div:active {
+        background-color: orangered;
+        font-size: 2em;
+      }
+
+      .class:not(:focus) {
+        color: deepskyblue;
+        border: 10px dashed greenyellow;
+      }
+
+      #id:not(:enabled) {
+        background-color: grey;
+      }
+
+      #id:enabled {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Holap</div>
+    <input type="text" name="" id="" class="class" />
+    <input type="button" value="Disabled" id="id" disabled />
+    <input type="button" value="Enabled" id="id" />
+  </body>
+</html>

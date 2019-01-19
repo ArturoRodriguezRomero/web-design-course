@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        font-size: 32px;
+        --color: lightblue;
+      }
+      .px {
+        position: absolute;
+
+        left: calc(100% / 2 - 100px / 2);
+        top: calc(100% / 2 - 100px / 2);
+
+        width: 100px;
+        height: 100px;
+
+        background-color: deepskyblue;
+      }
+      .inches {
+        width: 1in;
+        height: 1in;
+
+        background-color: dodgerblue;
+      }
+      .percentage {
+        width: 30%;
+        height: 30%;
+
+        background-color: yellow;
+      }
+
+      .percentage2 {
+        width: 30%;
+        height: 30%;
+
+        background-color: blueviolet;
+      }
+
+      .em2 {
+        font-size: 8px;
+      }
+
+      .em {
+        width: 10em;
+        height: 10em;
+
+        background-color: aqua;
+      }
+
+      .rem {
+        width: 10rem;
+        height: 10rem;
+
+        background-color: var(--color);
+      }
+
+      .viewport {
+        width: calc(100vw - 2rem - 100px - 30%);
+        height: calc(100vh / 3);
+
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    M
+    <div class="px">px</div>
+    <div class="inches">in</div>
+    <div class="percentage"><div class="percentage2">%</div></div>
+    <div class="em2"><div class="em">em</div></div>
+    <div class="rem">rem</div>
+    <div class="viewport"></div>
+  </body>
+</html>

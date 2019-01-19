@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --header-height: 150px;
+        --box-shadow: 0px 2px 4px #00000070;
+        --title-height: 50px;
+        --ball-size: 50px;
+        --default-size: 8px;
+      }
+
+      .header {
+        position: sticky;
+        top: 0px;
+
+        height: var(--header-height);
+        width: 100vw;
+
+        background-color: grey;
+
+        padding: calc(var(--default-size) * 2);
+
+        box-shadow: var(--box-shadow);
+
+        z-index: 10;
+      }
+
+      .title {
+        width: calc(var(--default-size) * 30);
+        height: var(--title-height);
+
+        background-color: lightgray;
+
+        box-shadow: var(--box-shadow);
+      }
+
+      .header__title {
+        position: relative;
+
+        top: calc(100% / 2 - var(--title-height) / 2);
+      }
+
+      .section {
+        height: 300vh;
+        width: 100vw;
+
+        background-color: lightgray;
+
+        padding: 50px;
+      }
+
+      .ball {
+        height: var(--ball-size);
+        width: var(--ball-size);
+
+        border-radius: 50%;
+        margin: 10px;
+      }
+
+      .red {
+        position: absolute;
+        right: 0px;
+
+        background-color: red;
+      }
+
+      .blue {
+        position: fixed;
+
+        left: 0px;
+        bottom: 0px;
+
+        background-color: blue;
+      }
+
+      .article {
+        width: 80%;
+
+        padding: 50px;
+        margin-bottom: 50px;
+
+        background-color: grey;
+
+        box-shadow: var(--box-shadow);
+      }
+
+      .article:nth-child(1) {
+        height: 30rem;
+      }
+
+      .article:nth-child(1) .title {
+        position: sticky;
+        top: 0px;
+      }
+
+      .article:nth-child(2) {
+        height: 30em;
+      }
+
+      .article:nth-child(2) .title {
+        position: sticky;
+        top: var(--header-height);
+      }
+
+      footer {
+      }
+    </style>
+  </head>
+  <body>
+    <button>Hola</button>
+    <header class="header">
+      <div class="ball red"></div>
+      <div class="header__title title"></div>
+    </header>
+    <section class="section">
+      <article class="article"><div class="title"></div></article>
+      <article class="article"><div class="title"></div></article>
+    </section>
+    <footer class="ball blue"></footer>
+  </body>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  />
+</html>

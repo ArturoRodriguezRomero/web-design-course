@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .app {
+        width: 100vw;
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: lightgray;
+        padding: 10px;
+      }
+
+      .navbar {
+        width: 25vw;
+        height: 15vh;
+        background-color: blue;
+        margin-bottom: 10px;
+      }
+
+      .news {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .news__item {
+        background-color: grey;
+        width: 100%;
+        height: 25vh;
+        margin-bottom: 10px;
+      }
+
+      @media (min-width: 768px) {
+        .navbar {
+          width: 100%;
+        }
+
+        .news {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .app {
+          display: grid;
+          grid-template-columns: 300px 1fr;
+          grid-gap: 10px;
+        }
+
+        .navbar {
+          height: 100%;
+        }
+
+        .news {
+          width: auto;
+
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <nav class="navbar"></nav>
+      <section class="news">
+        <article class="news__item"></article>
+        <article class="news__item"></article>
+        <article class="news__item"></article>
+        <article class="news__item"></article>
+        <article class="news__item"></article>
+        <article class="news__item"></article>
+        <article class="news__item"></article>
+        <article class="news__item"></article>
+        <article class="news__item"></article>
+      </section>
+    </main>
+  </body>
+</html>

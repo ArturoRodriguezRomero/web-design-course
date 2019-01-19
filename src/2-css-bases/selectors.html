@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        color: red;
+      }
+
+      section {
+        background-color: orangered;
+        font-size: 2em;
+      }
+
+      .particular {
+        background-color: beige;
+      }
+
+      .box[name] {
+      }
+
+      /* Elementos con nombre igual a "my-name" */
+      .box[name='my-name'] {
+        color: deepskyblue;
+        border: 1px dashed greenyellow;
+      }
+
+      /* Elementos con nombre que empiezan por "my" */
+      .box[name^='my'] {
+      }
+
+      /* Elementos con nombre que contiene "ame" */
+      .box[name*='ame'] {
+      }
+
+      /* Elementos con nombre que acaba en "ame" */
+      .box[name$='ame'] {
+      }
+
+      #id[type='text'] {
+      }
+
+      #id[type='text'][name='text-name'] {
+      }
+    </style>
+  </head>
+  <body>
+    <section>Section</section>
+    <section id="" class="clase1 clase2">Hola</section>
+    <div class="box" name="my-name">My name</div>
+    <div id="id" type="text" name="text-name">Type = Text</div>
+  </body>
+</html>
