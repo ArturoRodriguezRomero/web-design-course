@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      form {
+        width: fit-content;
+      }
+
+      div[role='tooltip'] {
+        visibility: hidden;
+      }
+
+      input:focus + div[role='tooltip'] {
+        visibility: visible;
+        background-color: orangered;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Login</legend>
+        <div>
+          <label for="username">Tu nombre de usuario</label>
+          <input
+            type="text"
+            id="username"
+            aria-describedby="username-tip"
+            required
+          />
+          <div role="tooltip" id="username-tip">Tu usuario es tu correo</div>
+        </div>
+        <div>
+          <label for="password">Tu contraseña</label>
+          <input
+            type="text"
+            id="password"
+            aria-describedby="password-tip"
+            required
+          />
+          <div role="tooltip" id="password-tip">
+            Te lo hemos mandado por email
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

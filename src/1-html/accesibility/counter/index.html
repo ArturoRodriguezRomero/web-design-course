@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Add or subtract ten</legend>
+        <div>
+          <label for="number">Current value</label>
+          <input
+            type="text"
+            role="alert"
+            aria-live="assertive"
+            readonly
+            value="0"
+            id="number"
+          />
+          <button id="add" type="button" title="add 10" aria-controls="number">
+            Add
+          </button>
+          <button
+            id="subtract"
+            type="button"
+            title="subtract 10"
+            aria-controls="number"
+          >
+            Subtract
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+  <script>
+    const number = document.querySelector('#number');
+
+    const add = document.querySelector('#add');
+    const subtract = document.querySelector('#subtract');
+
+    add.addEventListener('click', () => {
+      const value = parseInt(number.value);
+      number.value = value + 10;
+    });
+
+    subtract.addEventListener('click', () => {
+      const value = parseInt(number.value);
+      number.value = value - 10;
+    });
+  </script>
+</html>
