@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        background-color: lightgray;
+      }
+
+      .child {
+        width: calc(100% / 3);
+        height: calc(100% / 3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <button class="child">1</button> <button class="child">2</button>
+      <button class="child">3</button> <button class="child">4</button>
+      <button class="child">5</button> <button class="child">6</button>
+      <button class="child">7</button><button class="child">8</button
+      ><button class="child">9</button>
+    </div>
+  </body>
+</html>

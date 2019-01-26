@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /*.twang {
+        display: flex;
+        flex-direction: column;
+
+        margin: calc(var(--basic-unit) * 1);
+        padding: calc(var(--basic-unit) * 1);
+
+        background-color: var(--twang-300);
+
+        border-radius: var(--card-border-radius);
+
+        &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__image {
+        width: calc(var(--basic-unit) * 5);
+        height: calc(var(--basic-unit) * 5);
+
+        border-radius: 50%;
+        margin-right: calc(var(--basic-unit) * 2);
+        }
+
+        &__name {
+        margin-right: calc(var(--basic-unit) * 1);
+
+        text-transform: capitalize;
+        font-weight: bold;
+        }
+      }
+      &__body {
+        &__text {
+        padding: 0 calc(var(--basic-unit) * 1);
+        }
+
+        &__image {
+          width: 100%;
+          border-radius: var(--card-border-radius);
+        }
+      }
+      &__footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: calc(var(--basic-unit) * 1) 0;
+
+        &__counter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__icon {
+        font-size: 1.5rem;
+        margin-right: calc(var(--basic-unit) * 1);
+
+        &[data-type='replies'] {
+        color: var(--twang-100);
+      }
+
+      &[data-type='retwang'] {
+        color: var(--secondary-color-100);
+      }
+
+      &[data-type='favorite'] {
+        color: var(--primary-color-100);
+      }
+        }
+
+        }
+      }
+
+      
+
+      
+      
+    }*/
+    </style>
+  </head>
+  <body>
+    <article class="twang clone" data-clone-amount="10">
+      <header class="twang__header">
+        <img src="" alt="" srcset="" class="twang__header__image" />
+        <div class="twang__header__name"></div>
+        <div class="twang__header__handle"></div>
+      </header>
+      <div class="twang__body">
+        <p class="twang__body__text"></p>
+        <img src="" alt="" src="" class="twang__body__image" />
+      </div>
+      <footer class="twang__footer">
+        <div class="twang__footer__counter">
+          <div class="twang__footer__counter__icon" data-type="replies"></div>
+          <div class="twang__footer__counter__amount"></div>
+        </div>
+        <div class="twang__footer__counter">
+          <div class="twang__footer__counter__icon" data-type="retwang"></div>
+          <div class="twang__footer__counter__amount"></div>
+        </div>
+        <div class="twang__footer__counter">
+          <div class="twang__footer__counter__icon" data-type="favorite"></div>
+          <div class="twang__footer__counter__amount"></div>
+        </div>
+      </footer>
+    </article>
+  </body>
+</html>

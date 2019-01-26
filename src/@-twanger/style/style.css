@@ -66,6 +66,10 @@
   color: var(--primary-color-100);
 }
 
+.section-bar--desktop {
+  display: none;
+}
+
 .twang-list {
 }
 
@@ -175,4 +179,31 @@
 .gallery__item:first-child {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
+}
+
+@media (min-width: 990px) {
+  .header {
+    display: none;
+  }
+
+  .section-bar {
+    display: none;
+  }
+
+  .section-bar--desktop {
+    position: sticky;
+    top: 0px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 100px) 1fr;
+
+    background-color: var(--twang-300);
+
+    padding: var(--basic-unit) calc(var(--basic-unit) * 4);
+  }
+
+  .twang-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
