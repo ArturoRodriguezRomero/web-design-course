@@ -15,7 +15,7 @@
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     </p>
-    <div class="box" data-after="Holla"></div>
+    <div class="box" data-after="Holaaaaa"></div>
   </body>
   <style>
     p {
@@ -36,22 +36,18 @@
     }
 
     .box::after {
-      content: attr(data-after);
-
-      position: absolute;
-
-      color: red;
-    }
-
-    .box::before {
       content: '';
 
       position: absolute;
 
-      width: 100%;
-      height: 100%;
+      right: -10px;
+      top: -10px;
 
-      background-color: yellow;
+      width: 20px;
+      height: 20px;
+
+      background-color: crimson;
+      border-radius: 50%;
     }
   </style>
 </html>
