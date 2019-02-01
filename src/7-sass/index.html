@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spotify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <main class="app">
+      <nav class="navigation">
+        <header class="navigation__header">
+          <h3 class="navigation__header__item">Inicio</h3>
+          <h3 class="navigation__header__item">Explorar</h3>
+          <h3 class="navigation__header__item">Radio</h3>
+        </header>
+        <section class="navigation__sections">
+          <div class="navigation__section navigation__section--title">
+            Tu biblioteca
+          </div>
+          <div class="navigation__section">Lorem Ipsum Dolem</div>
+          <div class="navigation__section">Lorem Ipsum</div>
+          <div class="navigation__section">Lorem Ipsum Dolem</div>
+          <div class="navigation__section">Lorem</div>
+          <div class="navigation__section">Lorem Ipsum Dolem</div>
+          <div class="navigation__section">Lorem Ipsum</div>
+          <div class="navigation__section">Lorem Ipsum Dolem</div>
+          <div class="navigation__section">Lorem</div>
+          <div class="navigation__section">Lorem Ipsum Dolem</div>
+          <div class="navigation__section">Lorem Ipsum</div>
+        </section>
+      </nav>
+      <section class="section">
+        <header class="section__header">
+          <div class="section__header__label">
+            <img
+              class="section__header__label__image"
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+            />
+            <h1 class="section__header__label__title">
+              Descubrimiento Semanal
+            </h1>
+          </div>
+          <div class="section__header__buttons">
+            <button
+              class="section__header__button section__header__button--play"
+            >
+              Reproducir
+            </button>
+            <button
+              class="section__header__button section__header__button--icon"
+            >
+              <i class="far fa-heart"></i>
+            </button>
+            <button
+              class="section__header__button section__header__button--icon"
+            >
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </header>
+        <section class="song-list">
+          <article class="song-item song-item--header">
+            <div></div>
+            <div class="song-item__column">Título</div>
+            <div class="song-item__column">Artista</div>
+            <div class="song-item__column">Album</div>
+            <div class="song-item__column">
+              <i class="far fa-calendar-alt"></i>
+            </div>
+          </article>
+          <article class="song-item clone" data-clone-amount="20">
+            <i class="song-item__column far fa-heart"></i>
+            <div class="song-item__column">Funky Kingston</div>
+            <div class="song-item__column">Toots & The Maytals</div>
+            <div class="song-item__column">True Love</div>
+            <div class="song-item__column">Hace 6 días</div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="scripts/clone-element.js"></script>
+</html>

@@ -16,15 +16,15 @@
 
       @keyframes loading {
         0% {
-          transform: rotate(0deg);
-          background-color: deepskyblue;
+          transform: rotate(0deg) scale(0.1);
+          filter: blur(10px)
         }
         50% {
-          background-color: orangered;
+          filter: blur(3px)
         }
         100% {
-          transform: rotate(360deg);
-          background-color: chartreuse;
+          transform: rotate(360deg) scale(2);
+          filter: drop-shadow(0px 0px 40px 5px #0000006b)
         }
       }
 
@@ -32,9 +32,9 @@
         height: 400px;
         width: 400px;
 
-        animation: loading 3s infinite forwards;
+        animation: loading 3s infinite alternate-reverse;
 
-        animation-timing-function: linear;
+        animation-timing-function: ease;
 
         display: flex;
         align-items: center;
@@ -44,13 +44,9 @@
         text-align: center;
         color: white;
       }
-
-      .box:hover {
-        animation: loading 0.3s infinite forwards;
-      }
     </style>
   </head>
   <body>
-    <div class="box">FOLLOW THE LEADER</div>
+    <img src="https://storage.googleapis.com/proudcity/2016/05/Basketball-PNG.png" class="box"></img>
   </body>
 </html>

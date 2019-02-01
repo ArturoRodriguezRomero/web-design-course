@@ -1,0 +1,22 @@
+.song-list {
+  display: flex;
+  flex-direction: column;
+
+  .song-item {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr;
+
+    padding: calc(var(--unit-size) * 3);
+
+    border-bottom: 1px solid var(--spotify-300);
+
+    &--header {
+      color: var(--spotify-200);
+      text-transform: uppercase;
+
+      &__column {
+        color: var(--spotify-200);
+      }
+    }
+  }
+}

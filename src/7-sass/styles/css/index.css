@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+* {
+  box-sizing: border-box; }
+
+.app {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background-color: var(--background-color);
+  color: var(--spotify-100);
+  padding: calc(var(--unit-size) * 2); }
+
+:root {
+  --background-color: #191414;
+  --primary-color: #1db954;
+  --spotify-100: white;
+  --spotify-200: #ffffff5e;
+  --spotify-300: #ffffff25;
+  --unit-size: 8px; }
+
+.navigation {
+  position: sticky;
+  top: calc(var(--unit-size) * 2);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: var(--spotify-200);
+  font-weight: bold; }
+  .navigation__header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: calc(var(--unit-size) * 4); }
+    .navigation__header__item {
+      margin-bottom: calc(var(--unit-size) * 1); }
+  .navigation__section {
+    margin-bottom: calc(var(--unit-size) * 3); }
+    .navigation__section--title {
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 2px; }
+
+:root {
+  --font-family: 'Open Sans', sans-serif; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.section {
+  display: flex;
+  flex-direction: column; }
+  .section__header {
+    position: sticky;
+    top: 0px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .section__header__label {
+      display: flex;
+      align-items: center; }
+      .section__header__label__image {
+        width: calc(var(--unit-size) * 7);
+        height: calc(var(--unit-size) * 7);
+        margin-right: calc(var(--unit-size) * 2);
+        object-fit: cover;
+        object-position: center center; }
+    .section__header__buttons {
+      display: flex;
+      align-items: center; }
+    .section__header__button {
+      color: var(--spotify-100);
+      background-color: transparent;
+      margin-right: calc(var(--unit-size) * 4); }
+      .section__header__button--play {
+        height: fit-content;
+        padding: calc(var(--unit-size) * 2) calc(var(--unit-size) * 5);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        background-color: var(--primary-color);
+        border-radius: 9999px;
+        border: none; }
+      .section__header__button--icon {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        border: 1px solid var(--spotify-100);
+        border-radius: 50%; }
+
+.song-list {
+  display: flex;
+  flex-direction: column; }
+  .song-list .song-item {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr;
+    padding: calc(var(--unit-size) * 3);
+    border-bottom: 1px solid var(--spotify-300); }
+    .song-list .song-item--header {
+      color: var(--spotify-200);
+      text-transform: uppercase; }
+      .song-list .song-item--header__column {
+        color: var(--spotify-200); }

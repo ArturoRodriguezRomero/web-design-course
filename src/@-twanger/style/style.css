@@ -97,6 +97,8 @@
 
   border-radius: 50%;
   margin-right: calc(var(--basic-unit) * 2);
+
+  object-fit: cover;
 }
 
 .twang__header__name {
@@ -138,6 +140,11 @@
 .twang__footer__counter__icon {
   font-size: 1.5rem;
   margin-right: calc(var(--basic-unit) * 1);
+  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.twang__footer__counter__icon:hover {
+  filter: blur(2px);
 }
 
 .twang__footer__counter__icon[data-type='replies'] {
@@ -182,6 +189,15 @@
 }
 
 @media (min-width: 990px) {
+  :root {
+    --primary-color-100: #f52549;
+    --primary-color-200: #fa6775;
+
+    --twang-100: #bdbdbd;
+    --twang-200: #808080;
+    --twang-300: #2b2b2b;
+  }
+
   .header {
     display: none;
   }

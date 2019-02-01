@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+
+  background-color: var(--background-color);
+  color: var(--spotify-100);
+
+  padding: calc(var(--unit-size) * 2);
+}
